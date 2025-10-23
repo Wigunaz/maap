@@ -6,12 +6,13 @@
 
 body {
     font-family: 'Playfair Display', serif;
-    background: linear-gradient(135deg, #fff5f5 0%, #ffe9f3 100%);
+    background: linear-gradient(135deg, #F5E6D3 0%, #E6D5BC 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    color: #2C1810;
 }
 
 /* Animasi Background */
@@ -46,12 +47,16 @@ body {
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
     display: none;
     pointer-events: none;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(92, 64, 51, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 #content1 {
@@ -68,13 +73,17 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     position: relative;
     width: 100%;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     height: 100px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
 }
 
 .hidden {
@@ -86,18 +95,18 @@ body {
 /* Styling untuk semua halaman */
 h2 {
     font-family: 'Dancing Script', cursive;
-    color: #ff6b8b;
+    color: #5C4033;
     margin-bottom: 25px;
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(255, 107, 139, 0.1);
+    text-shadow: 2px 2px 4px rgba(92, 64, 51, 0.15);
 }
 
 p {
-    color: #8e7474;
-    line-height: 1.8;
-    margin-bottom: 30px;
+    color: #3C2A21;
+    line-height: 1.9;
+    margin-bottom: 35px;
     font-size: 17px;
     max-width: 500px;
     margin-left: auto;
@@ -123,17 +132,18 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #ffb3d9;
+    background: #C4A484;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    border: 3px solid #ff99cc;
+    border: 3px solid #8b7355;
 }
 
 .envelope-flap {
     position: absolute;
     width: 100%;
     height: 60%;
-    background: #ffc9e5;
-    border: 3px solid #ff99cc;
+    background: linear-gradient(160deg, #e2bda6, #d4b592);
+    border: 3px solid #b38b76;
+    box-shadow: inset 0 2px 8px rgba(139, 115, 85, 0.1);
     border-bottom: none;
     clip-path: polygon(0 0, 50% 100%, 100% 0);
     transform-origin: top;
@@ -166,7 +176,7 @@ p {
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    color: #ff69b4;
+    color: #8b7355;
     font-size: 14px;
     animation: bounce 2s infinite;
 }
@@ -198,7 +208,7 @@ p {
 }
 
 .letter h1 {
-    color: #ff69b4;
+    color: #8b7355;
     text-align: center;
     margin-bottom: 20px;
     font-size: 32px;
@@ -240,7 +250,7 @@ p {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #ff8fa3, #ff6b8b);
+    background: linear-gradient(45deg, #8b7355, #8b7355);
     transition: all 0.4s ease;
     z-index: -1;
 }
@@ -259,8 +269,8 @@ p {
 .btn-next {
     padding: 15px 40px;
     border-radius: 50px;
-    border-color: #ff8fa3;
-    color: #ff8fa3;
+    border-color: #8b7355;
+    color: #8b7355;
     margin: 20px auto;
     display: block;
     min-width: 160px;
@@ -272,26 +282,31 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 15px;
     min-width: 120px;
+    width: 120px;
+    height: 45px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .btn-yes {
-    border-color: #4CAF50;
+    border: none;
     color: #fff;
-    background: linear-gradient(45deg, #4CAF50, #45a049);
+    background: linear-gradient(45deg, #8B4513, #A0522D);
 }
 
 .btn-yes:hover {
-    background: linear-gradient(45deg, #45a049, #3d8b40);
+    background: linear-gradient(45deg, #A0522D, #B8860B);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.3);
 }
 
 .btn-no {
-    border-color: #ff4444;
+    border: none;
     color: #fff;
-    background: linear-gradient(45deg, #ff4444, #ff3333);
+    background: linear-gradient(45deg, #8B4513, #A0522D);
     position: static;
     transition: all 0.3s ease;
 }
@@ -301,9 +316,9 @@ p {
 }
 
 .btn-no:hover {
-    background: linear-gradient(45deg, #ff3333, #ff2222);
+    background: linear-gradient(45deg, #A0522D, #B8860B);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255, 68, 68, 0.3);
+    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.3);
 }
 
 /* Emoji animation */
@@ -326,7 +341,7 @@ p {
 }
 
 .btn-no::before {
-    background: linear-gradient(45deg, #ff8fa3, #ff6b8b);
+    background: linear-gradient(45deg, #8b7355, #8b7355);
 }
 
 /* Hover effects */
@@ -344,6 +359,7 @@ p {
     cursor: pointer;
     transition: all 0.6s ease;
     perspective: 1000px;
+    filter: drop-shadow(0 10px 20px rgba(139, 115, 85, 0.2));
 }
 
 .envelope.opened {
@@ -358,11 +374,11 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #ff8fa3;
-    border: 2px solid #ff7391;
+    background: linear-gradient(145deg, #D4B592, #C4A484);
+    border: 2px solid #8B7355;
     border-radius: 4px;
     z-index: 1;
-    box-shadow: 0 5px 15px rgba(255, 143, 163, 0.3);
+    box-shadow: 0 5px 15px rgba(139, 115, 85, 0.3);
 }
 
 .envelope-top {
@@ -372,7 +388,7 @@ p {
     height: 0;
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-    border-top: 100px solid #ffb3c1;
+    border-top: 100px solid #D4B592;
     z-index: 3;
     transform-origin: top;
     transition: transform 0.5s ease;
@@ -388,7 +404,7 @@ p {
     top: 0;
     width: 0;
     height: 0;
-    border-left: 150px solid #ff9fb1;
+    border-left: 150px solid #D4B592;
     border-top: 100px solid transparent;
     border-bottom: 100px solid transparent;
     z-index: 2;
@@ -400,7 +416,7 @@ p {
     top: 0;
     width: 0;
     height: 0;
-    border-right: 150px solid #ff9fb1;
+    border-right: 150px solid #D4B592;
     border-top: 100px solid transparent;
     border-bottom: 100px solid transparent;
     z-index: 2;
@@ -410,8 +426,8 @@ p {
     position: absolute;
     width: 100%;
     height: 60%;
-    background: #ffc9e5;
-    border: 3px solid #ff99cc;
+    background: #8b7355;
+    border: 3px solid #8b7355;
     border-bottom: none;
     clip-path: polygon(0 0, 50% 100%, 100% 0);
     transform-origin: top;
@@ -506,7 +522,7 @@ p {
 
 .btn-yes:hover {
     background: #45a049;
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .btn-no {
