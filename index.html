@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Apology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Amplop -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-top"></div>
+            <div class="envelope-left"></div>
+            <div class="envelope-right"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="content-container">
+            <!-- Page 1: Permintaan Maaf -->
+            <div class="content" id="content1">
+                <h2>My Apology</h2>
+                <p>
+                    Baby, I'm so sorry for not being there for you when you needed me the most. 
+                    My life without you is incomplete, and I want to spend the rest of my life making you happy.
+                </p>
+                <button class="btn btn-next" id="toPage2">Next</button>
+            </div>
+            
+            <!-- Page 2: Question -->
+            <div class="content" id="content2">
+                <h2>My Question</h2>
+                <p>Can we fall in love again? You're my person and I can't be this without you. Every day without you feels incomplete, and I want to spend the rest of my life making you happy.</p>
+                <div class="button-container">
+                    <button class="btn btn-yes" id="btnYes">Yes</button>
+                    <button class="btn btn-no" id="btnNo">No</button>
+                </div>
+            </div>
+
+            <!-- Page 3: Thank You -->
+            <div class="content" id="content3">
+                <h2>Thank You</h2>
+                <p>Thank you for being for another chance. This time, forever no rule</p>
+                <p>I promise to love you better, to be there for you always.</p>
+            </div>
+
+        <!-- Page 2: Pertanyaan -->
+        <div class="page hidden" id="page2">
+            <div class="content question-content">
+                <h1>Satu Pertanyaan... 💭</h1>
+                <p>Kamu masih sayang sama aku kan? 👉👈</p>
+                <div class="button-container">
+                    <button class="btn btn-yes" id="btnYes">Iya ❤️</button>
+                    <button class="btn btn-no" id="btnNo">Nggak 💔</button>
+                </div>
+                <div id="emojis" class="emojis"></div>
+            </div>
+        </div>
+
+        <!-- Page 3: Terima Kasih -->
+        <div class="page hidden" id="page3">
+            <div class="content thank-you-content">
+                <h1>Terima Kasih! �</h1>
+                <p>Makasih ya udah mau maafin dan tetap sayang sama aku!</p>
+                <p>Aku janji akan selalu berusaha jadi yang terbaik buat kamu!</p>
+                <div class="hearts-container">
+                    <div class="heart">❤️</div>
+                    <div class="heart">💖</div>
+                    <div class="heart">💝</div>
+                    <div class="heart">💕</div>
+                    <div class="heart">💗</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
